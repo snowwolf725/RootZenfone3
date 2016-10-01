@@ -1,0 +1,464 @@
+;
+; Android WinUsb driver installation.
+;
+[Version]
+Signature           = "$Windows NT$"
+Class               = AndroidUsbDeviceClass
+ClassGuid           = {3F966BD9-FA04-4ec5-991C-D326973B5128}
+Provider            = %ProviderName%
+DriverVer           = 03/16/2015,8.0.0000.3
+CatalogFile.NTx86   = androidwinusb86.cat
+CatalogFile.NTamd64 = androidwinusba64.cat
+
+[ClassInstall32]
+Addreg = AndroidWinUsbClassReg
+
+[AndroidWinUsbClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-1
+
+
+[Manufacturer]
+%ProviderName% = ASUS, NTx86, NTamd64
+
+[ASUS.NTx86]
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4C81&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4C83&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4C85&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4C91&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4C93&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4C95&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CA1&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CA3&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CA5&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CB1&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CB3&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CB5&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CC1&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CC3&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CC5&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CD1&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CD3&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CD5&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CE1&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CE3&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CE5&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4D01&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4D03&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4D05&MI_01
+%SingleAdbInterface% = USB_Install, USB\VID_0B05&PID_4DAE
+%SingleBootLoaderInterface% = USB_Install, USB\VID_0B05&PID_4DAF
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4DDE&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4DEF&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4E01&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4E03&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4E05&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4E1F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4E3F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4E5F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4F3F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4F5F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4F7F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4FBF&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_503F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_505F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_507F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_50BF&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_513F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_515F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_517F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_519F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5201&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5203&MI_00
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5205&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5207&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5211&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5213&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5215&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_521F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5221&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5223&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5225&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5231&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5233&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5235&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_523F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5241&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5243&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5245&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5251&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5253&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5255&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_525F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5261&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5263&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5265&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5271&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5273&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5275&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_531F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_533F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_535F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5361&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5363&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5365&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5371&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5373&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5375&MI_01
+%SingleAdbInterface% = USB_Install, USB\VID_0B05&PID_5401
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5411&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5413&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5416&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5418&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_541F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_543F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_545F&MI_01
+%SingleAdbInterface% = USB_Install, USB\VID_0B05&PID_5461
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5466&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5467&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5468&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5469&MI_01
+%SingleAdbInterface% = USB_Install, USB\VID_0B05&PID_5471
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5477&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5479&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5481&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5483&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5485&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5491&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5493&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5495&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5501&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5503&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5507&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5509&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_551F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_553F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_555F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5561&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5563&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5571&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5573&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5575&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5581&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5583&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5585&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5591&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5593&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5595&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5601&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5603&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5605&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_561F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_563F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_565F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_571F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_573F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_575F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_581F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_583F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_585F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_591F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_593F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_595F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5A1F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5A3F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5A5F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5B1F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5B3F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5B5F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5C1F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5C3F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5C5F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5D1F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5D3F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5D5F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5E1F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5E3F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5E5F&MI_01
+%SinglePCLinkInterface%     = USB_Install, USB\VID_0B05&PID_5F01
+%CompositePCLinkInterface%  = USB_Install, USB\VID_0B05&PID_5F02&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5F03&MI_01
+%CompositePCLinkInterface%  = USB_Install, USB\VID_0B05&PID_5F03&MI_02
+%CompositePCLinkInterface%  = USB_Install, USB\VID_0B05&PID_5F04&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5F05&MI_02
+%CompositePCLinkInterface%  = USB_Install, USB\VID_0B05&PID_5F05&MI_03
+%CompositePCLinkInterface%  = USB_Install, USB\VID_0B05&PID_5F06&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5F07&MI_01
+%CompositePCLinkInterface%  = USB_Install, USB\VID_0B05&PID_5F07&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5F1F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5F3F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5F5F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_601F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_603F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_605F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_612F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_613F&MI_04
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_615F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_618F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_619F&MI_04
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_61CF&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_61DF&MI_06
+%SingleAdbInterface% = USB_Install, USB\VID_0B05&PID_7770
+%SingleBootLoaderInterface% = USB_Install, USB\VID_0B05&PID_7771
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_7773&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_7775&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_7777&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_7779&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_7781&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_7783&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_7785&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_7787&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_7790&MI_01
+
+[ASUS.NTamd64]
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4C81&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4C83&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4C85&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4C91&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4C93&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4C95&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CA1&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CA3&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CA5&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CB1&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CB3&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CB5&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CC1&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CC3&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CC5&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CD1&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CD3&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CD5&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CE1&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CE3&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4CE5&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4D01&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4D03&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4D05&MI_01
+%SingleAdbInterface% = USB_Install, USB\VID_0B05&PID_4DAE
+%SingleBootLoaderInterface% = USB_Install, USB\VID_0B05&PID_4DAF
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4DDE&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4DEF&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4E01&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4E03&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4E05&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4E1F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4E3F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4E5F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4F3F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4F5F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4F7F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_4FBF&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_503F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_505F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_507F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_50BF&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_513F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_515F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_517F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_519F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5201&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5203&MI_00
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5205&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5207&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5211&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5213&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5215&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_521F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5221&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5223&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5225&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5231&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5233&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5235&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_523F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5241&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5243&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5245&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5251&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5253&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5255&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_525F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5261&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5263&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5265&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5271&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5273&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5275&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_531F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_533F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_535F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5361&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5363&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5365&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5371&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5373&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5375&MI_01
+%SingleAdbInterface% = USB_Install, USB\VID_0B05&PID_5401
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5411&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5413&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5416&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5418&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_541F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_543F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_545F&MI_01
+%SingleAdbInterface% = USB_Install, USB\VID_0B05&PID_5461
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5466&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5467&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5468&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5469&MI_01
+%SingleAdbInterface% = USB_Install, USB\VID_0B05&PID_5471
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5477&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5479&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5481&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5483&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5485&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5491&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5493&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5495&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5501&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5503&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5507&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5509&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_551F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_553F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_555F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5561&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5563&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5571&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5573&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5575&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5581&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5583&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5585&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5591&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5593&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5595&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5601&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5603&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5605&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_561F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_563F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_565F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_571F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_573F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_575F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_581F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_583F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_585F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_591F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_593F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_595F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5A1F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5A3F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5A5F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5B1F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5B3F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5B5F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5C1F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5C3F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5C5F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5D1F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5D3F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5D5F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5E1F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5E3F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5E5F&MI_01
+%SinglePCLinkInterface%     = USB_Install, USB\VID_0B05&PID_5F01
+%CompositePCLinkInterface%  = USB_Install, USB\VID_0B05&PID_5F02&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5F03&MI_01
+%CompositePCLinkInterface%  = USB_Install, USB\VID_0B05&PID_5F03&MI_02
+%CompositePCLinkInterface%  = USB_Install, USB\VID_0B05&PID_5F04&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5F05&MI_02
+%CompositePCLinkInterface%  = USB_Install, USB\VID_0B05&PID_5F05&MI_03
+%CompositePCLinkInterface%  = USB_Install, USB\VID_0B05&PID_5F06&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5F07&MI_01
+%CompositePCLinkInterface%  = USB_Install, USB\VID_0B05&PID_5F07&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5F1F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5F3F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_5F5F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_601F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_603F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_605F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_612F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_613F&MI_04
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_615F&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_618F&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_619F&MI_04
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_61CF&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_61DF&MI_06
+%SingleAdbInterface% = USB_Install, USB\VID_0B05&PID_7770
+%SingleBootLoaderInterface% = USB_Install, USB\VID_0B05&PID_7771
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_7773&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_7775&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_7777&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_7779&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_7781&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_7783&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_7785&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_7787&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_0B05&PID_7790&MI_01
+
+[USB_Install]
+Include = winusb.inf
+Needs   = WINUSB.NT
+
+[USB_Install.Services]
+Include     = winusb.inf
+AddService  = WinUSB,0x00000002,WinUSB_ServiceInstall
+
+[WinUSB_ServiceInstall]
+DisplayName     = %WinUSB_SvcDesc%
+ServiceType     = 1
+StartType       = 3
+ErrorControl    = 1
+ServiceBinary   = %12%\WinUSB.sys
+
+[USB_Install.Wdf]
+KmdfService = WINUSB, WinUSB_Install
+
+[WinUSB_Install]
+KmdfLibraryVersion  = 1.9
+
+[USB_Install.HW]
+AddReg  = Dev_AddReg
+
+[Dev_AddReg]
+HKR,,DeviceInterfaceGUIDs,0x10000,"{F72FE0D4-CBCB-407d-8814-9ED673D0DD6B}"
+
+[USB_Install.CoInstallers]
+AddReg    = CoInstallers_AddReg
+CopyFiles = CoInstallers_CopyFiles
+
+[CoInstallers_AddReg]
+HKR,,CoInstallers32,0x00010000,"WdfCoInstaller01009.dll,WdfCoInstaller","WinUSBCoInstaller2.dll"
+
+[CoInstallers_CopyFiles]
+WinUSBCoInstaller2.dll
+WdfCoInstaller01009.dll
+
+[DestinationDirs]
+CoInstallers_CopyFiles=11
+
+[SourceDisksNames]
+1 = %DISK_NAME%,,,\i386
+2 = %DISK_NAME%,,,\amd64
+
+[SourceDisksFiles.x86]
+WinUSBCoInstaller2.dll  = 1
+WdfCoInstaller01009.dll = 1
+
+[SourceDisksFiles.amd64]
+WinUSBCoInstaller2.dll  = 2
+WdfCoInstaller01009.dll = 2
+
+[Strings]
+ProviderName                = "ASUSTeK COMPUTER INC."
+SingleAdbInterface          = "ASUS Android ADB Interface"
+CompositeAdbInterface       = "ASUS Android Composite ADB Interface"
+SingleBootLoaderInterface   = "ASUS Android Bootloader Interface"
+WinUSB_SvcDesc              = "ASUS Android USB Driver"
+DISK_NAME                   = "ASUS Android WinUsb installation disk"
+ClassName                   = "ASUS Android Device"
+SinglePCLinkInterface       = "ASUS Android PC Link Interface"
+CompositePCLinkInterface    = "ASUS Android Composite PC Link Interface"
