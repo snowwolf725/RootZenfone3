@@ -26,3 +26,4 @@ ECHO #                      Please press any key to exit                        
 ECHO #                                                                             #
 ECHO ###############################################################################
 pause
+adb reboot
