@@ -6,6 +6,7 @@ ECHO #                                                                          
 ECHO #   Please boot your mobile to Recovery mode, and connect your mobile to PC   #
 ECHO #                                                                             #
 ECHO ###############################################################################
+pause
 adb kill-server
 @ECHO on
 adb wait-for-device
