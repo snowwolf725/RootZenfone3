@@ -9,7 +9,6 @@ ECHO ###########################################################################
 pause
 adb kill-server
 @ECHO on
-adb wait-for-device
 adb push dot.supersu /data/.supersu
 adb sideload SuperSU.zip
 @ECHO off
